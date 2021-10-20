@@ -9,8 +9,13 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "jest",
-    "start": "node index.js"
+    "build": "",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "test": "jest"
   },
   "author": "abel@mit.edu",
   "license": "MIT"
